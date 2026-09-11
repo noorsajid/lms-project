@@ -42,7 +42,8 @@ function Login({ setIsLoggedIn }) {
     try {
 
       const response = await axios.post(
-        "https://lms-backend-06457.containers.snapdeploy.app",
+
+          "https://lms-backend-api-bnx4.onrender.com/student-login",
         {
           email: email,
           password: password,

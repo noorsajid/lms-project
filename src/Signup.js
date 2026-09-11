@@ -20,7 +20,7 @@ function Signup() {
 
     try {
 
-      await axios.post("http://localhost:5000/student-signup", {
+      await axios.post("https://lms-backend-06457.containers.snapdeploy.app/student-login", {
 
         name: name,
         email: email,
