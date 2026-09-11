@@ -42,7 +42,7 @@ function Login({ setIsLoggedIn }) {
     try {
 
       const response = await axios.post(
-        "http://localhost:5000/student-login",
+        "https://lms-backend-06457.containers.snapdeploy.app",
         {
           email: email,
           password: password,
