@@ -1,0 +1,101 @@
+.announcement-admin{
+    padding:30px;
+    background:#f4f6f9;
+    min-height:100vh;
+}
+
+.announcement-admin h1{
+    margin-bottom:20px;
+    color:#4f46e5;
+}
+
+.announcement-form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    align-items:flex-start;
+}
+
+/* Input */
+
+.announcement-form input{
+    width:400px;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:15px;
+}
+
+/* Textarea */
+
+.announcement-form textarea{
+    width:650px;
+    height:140px;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:15px;
+    resize:none;
+}
+
+/* Main Button */
+
+.announcement-form button{
+    width:180px;
+    padding:12px;
+    background:#4f46e5;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:bold;
+}
+
+.announcement-form button:hover{
+    background:#4338ca;
+}
+
+/* Table */
+
+table{
+    width:100%;
+    margin-top:30px;
+    border-collapse:collapse;
+    background:white;
+}
+
+table th{
+    background:#4f46e5;
+    color:white;
+    padding:12px;
+}
+
+table td{
+    padding:12px;
+    border-bottom:1px solid #ddd;
+    text-align:center;
+}
+
+/* Edit Button */
+
+.edit-btn{
+    background:#2c10cc;
+    color:white;
+    border:none;
+    padding:8px 14px;
+    border-radius:5px;
+    cursor:pointer;
+    margin-right:8px;
+}
+
+/* Delete Button */
+
+.delete-btn{
+    background:red;
+    color:white;
+    border:none;
+    padding:8px 14px;
+    border-radius:5px;
+    cursor:pointer;
+}

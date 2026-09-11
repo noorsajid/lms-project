@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.home {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  color: white;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 60px;
+}
+
+.logo {
+  font-size: 28px;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.navbar li {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.navbar li:hover {
+  color: #ddd;
+}
+
+.signup {
+  background: white;
+  color: #4f46e5;
+  padding: 8px 15px;
+  border-radius: 8px;
+}
+
+/* HERO SECTION */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px;
+}
+
+.left {
+  max-width: 500px;
+}
+
+.left h1 {
+  font-size: 55px;
+}
+
+.left p {
+  margin-top: 15px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.left button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  border: none;
+  background: white;
+  color: #4f46e5;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.left button:hover {
+  background: #ddd;
+}
+
+.right img {
+  width: 450px;
+  border-radius: 20px;
+}

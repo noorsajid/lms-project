@@ -1,0 +1,79 @@
+
+.students-container{
+    padding:30px;
+    background:#f4f7fb;
+    min-height:100vh;
+}
+
+.students-container h1{
+    margin-bottom:25px;
+    color:#1f2937;
+    font-size:30px;
+    font-weight:bold;
+}
+
+.report-table{
+    width:100%;
+    border-collapse:collapse;
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.report-table thead{
+    background:#2563eb;
+    color:#fff;
+}
+
+.report-table th{
+    padding:15px;
+    text-align:center;
+    font-size:15px;
+}
+
+.report-table td{
+    padding:14px;
+    text-align:center;
+    border-bottom:1px solid #e5e7eb;
+    font-size:14px;
+}
+
+.report-table tbody tr:nth-child(even){
+    background:#f9fafb;
+}
+
+.report-table tbody tr:hover{
+    background:#eef5ff;
+    transition:.3s;
+}
+
+.pass{
+    background:#22c55e;
+    color:#fff;
+    padding:5px 12px;
+    border-radius:20px;
+    font-weight:600;
+}
+
+.fail{
+    background:#ef4444;
+    color:#fff;
+    padding:5px 12px;
+    border-radius:20px;
+    font-weight:600;
+}
+
+@media(max-width:992px){
+
+    .students-container{
+        padding:15px;
+    }
+
+    .report-table{
+        display:block;
+        overflow-x:auto;
+        white-space:nowrap;
+    }
+
+}

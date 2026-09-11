@@ -1,0 +1,49 @@
+.results-container{
+
+    width:90%;
+    margin:40px auto;
+}
+
+.results-container h1{
+
+    text-align:center;
+    color:#2c3e50;
+    margin-bottom:30px;
+}
+
+table{
+
+    width:100%;
+    border-collapse:collapse;
+}
+
+th{
+
+    background:#007bff;
+    color:white;
+    padding:12px;
+}
+
+td{
+
+    border:1px solid #ddd;
+    padding:12px;
+    text-align:center;
+}
+
+tr:nth-child(even){
+
+    background:#f8f8f8;
+}
+
+.pass{
+
+    color:green;
+    font-weight:bold;
+}
+
+.fail{
+
+    color:red;
+    font-weight:bold;
+}

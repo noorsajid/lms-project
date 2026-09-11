@@ -1,0 +1,35 @@
+.announcement-container{
+
+    width:80%;
+
+    margin:auto;
+
+    padding:30px;
+
+}
+
+.announcement-card{
+
+    background:white;
+
+    padding:20px;
+
+    margin-bottom:20px;
+
+    border-radius:10px;
+
+    box-shadow:0 0 10px #ccc;
+
+}
+
+.announcement-card h2{
+
+    color:#007bff;
+
+}
+
+.announcement-card small{
+
+    color:gray;
+
+}

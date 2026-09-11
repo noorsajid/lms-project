@@ -1,0 +1,24 @@
+OULAD FINAL MODEL CLASSIFICATION REPORT
+===========================================================================
+
+Model: Gradient Boosting
+
+Accuracy: 0.7587
+Balanced Accuracy: 0.7903
+Precision: 0.7883
+Recall: 0.7587
+F1 Weighted: 0.7606
+F1 Macro: 0.7434
+
+Classification Report:
+
+              precision    recall  f1-score   support
+
+ Distinction     0.4647    0.8158    0.5921       581
+        Fail     0.7832    0.7755    0.7793      1323
+        Pass     0.8447    0.6225    0.7167      2376
+   Withdrawn     0.8311    0.9473    0.8854      1423
+
+    accuracy                         0.7587      5703
+   macro avg     0.7309    0.7903    0.7434      5703
+weighted avg     0.7883    0.7587    0.7606      5703
