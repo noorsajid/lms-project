@@ -42,7 +42,7 @@ function Reports() {
     try {
 
       const res = await axios.get(
-        "http://localhost:5000/reports-summary"
+        "https://lms-backend-api-bnx4.onrender.com/reports-summary"
       );
 
       setReport(res.data);
@@ -65,7 +65,7 @@ function Reports() {
 
     try {
 
-    const res = await axios.get("http://localhost:5000/student-reports");
+    const res = await axios.get("https://lms-backend-api-bnx4.onrender.com/student-reports");
 
     console.log("Student Reports:", res.data);
 
