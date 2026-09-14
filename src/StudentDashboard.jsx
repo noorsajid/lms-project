@@ -25,7 +25,7 @@ useEffect(() => {
 
     try {
 
-      const res = await axios.get("http://localhost:5000/courses");
+      const res = await axios.get("https://lms-backend-api-bnx4.onrender.com/courses");
 
       setCourses(res.data);
 
@@ -43,7 +43,7 @@ useEffect(() => {
     try {
 
       const res = await axios.get(
-        `http://localhost:5000/enrollments/${studentId}`
+       `https://lms-backend-api-bnx4.onrender.com/enrollments/${studentId}`
       );
 
       setMyCourses(res.data);
@@ -62,7 +62,7 @@ useEffect(() => {
     try {
 
       const res = await axios.post(
-        "http://localhost:5000/enrollments",
+        "https://lms-backend-api-bnx4.onrender.com/enrollments",
         {
 
           student_id: studentId,
