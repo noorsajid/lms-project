@@ -17,7 +17,7 @@ function Announcements() {
   const loadAnnouncements = async () => {
 
     const res = await axios.get(
-      "http://localhost:5000/announcements"
+      "https://lms-backend-api-bnx4.onrender.com/announcements"
     );
 
     setAnnouncements(res.data);
@@ -29,7 +29,7 @@ function Announcements() {
     if (editId === null) {
 
       await axios.post(
-        "http://localhost:5000/announcements",
+        "https://lms-backend-api-bnx4.onrender.com/announcements",
         {
           title,
           description
@@ -41,7 +41,7 @@ function Announcements() {
     } else {
 
       await axios.put(
-        `http://localhost:5000/announcements/${editId}`,
+        `https://lms-backend-api-bnx4.onrender.com/announcements/${editId}`,
         {
           title,
           description
@@ -76,7 +76,7 @@ function Announcements() {
     if (window.confirm("Delete this announcement?")) {
 
       await axios.delete(
-        `http://localhost:5000/announcements/${id}`
+        `https://lms-backend-api-bnx4.onrender.com/announcements/${id}`
       );
 
       loadAnnouncements();
