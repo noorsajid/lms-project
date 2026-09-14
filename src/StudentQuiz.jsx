@@ -75,7 +75,7 @@ function StudentQuiz() {
         console.log("Loading Quiz ID:", id);
 
         const res = await axios.get(
-          `http://localhost:5000/student-quiz/${id}`
+          `https://lms-backend-api-bnx4.onrender.com/student-quiz/${id}`
         );
 
         console.log("Questions:", res.data);
@@ -146,7 +146,7 @@ function StudentQuiz() {
       console.log("Time Spent:", timeSpent);
 
       const res = await axios.post(
-        "http://localhost:5000/submit-quiz",
+        "https://lms-backend-api-bnx4.onrender.com/submit-quiz",
         {
           student_id: studentId,
           quiz_id: id,
