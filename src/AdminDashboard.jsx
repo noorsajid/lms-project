@@ -59,7 +59,7 @@ function AdminDashboard() {
     try{
 
         const res = await axios.get(
-            "http://localhost:5000/quiz-analytics"
+            "https://lms-backend-api-bnx4.onrender.com/quiz-analytics"
         );
 
         setAnalytics(res.data);
@@ -81,7 +81,7 @@ function AdminDashboard() {
     try {
 
       const res = await axios.get(
-        "http://localhost:5000/admin-dashboard"
+        "https://lms-backend-api-bnx4.onrender.com/admin-dashboard"
       );
 
       setDashboard(res.data);
@@ -112,7 +112,7 @@ const handleLogout = () => {
     try {
 
       const res = await axios.get(
-        "http://localhost:5000/prediction-chart"
+        "https://lms-backend-api-bnx4.onrender.com/prediction-chart"
       );
 
       setPredictionChart(res.data);
