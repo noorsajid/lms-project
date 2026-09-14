@@ -19,7 +19,7 @@ function Announcements() {
     try {
 
       const res = await axios.get(
-        "http://localhost:5000/announcements"
+        "https://lms-backend-api-bnx4.onrender.com/announcements"
       );
 
       setAnnouncements(res.data);
@@ -39,7 +39,7 @@ function Announcements() {
     try {
 
       await axios.post(
-        "http://localhost:5000/announcement-view",
+        "https://lms-backend-api-bnx4.onrender.com/announcement-view",
         {
 
           student_id: localStorage.getItem("student_id")
