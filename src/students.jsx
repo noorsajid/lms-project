@@ -18,7 +18,7 @@ function Students() {
     try {
 
       const res = await axios.get(
-        "http://localhost:5000/student-reports"
+        "https://lms-backend-api-bnx4.onrender.com/student-reports"
       );
 
       setReports(res.data);
