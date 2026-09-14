@@ -103,6 +103,11 @@ function Login({ setIsLoggedIn }) {
 
           <h2>Login Page</h2>
 
+        <br />
+        <label className="admin-label">
+        For Admin: Email: admin@gmail.com | Password: 123
+        </label>
+         <br />
           <input
             type="email"
             placeholder="Email"
