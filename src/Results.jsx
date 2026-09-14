@@ -32,7 +32,7 @@ function Results() {
 
     try {
 
-      const res = await axios.get("http://localhost:5000/students");
+      const res = await axios.get("https://lms-backend-api-bnx4.onrender.com/students");
 
       setStudents(res.data);
 
@@ -52,7 +52,7 @@ function Results() {
 
     try {
 
-      const res = await axios.get("http://localhost:5000/quizzes");
+      const res = await axios.get("https://lms-backend-api-bnx4.onrender.com/quizzes");
 
       setQuizzes(res.data);
 
@@ -72,7 +72,7 @@ function Results() {
 
     try {
 
-      const res = await axios.get("http://localhost:5000/results");
+      const res = await axios.get("https://lms-backend-api-bnx4.onrender.com/results");
 
       setResults(res.data);
 
@@ -126,7 +126,7 @@ function Results() {
 
     try {
 
-      await axios.post("http://localhost:5000/results", {
+      await axios.post("https://lms-backend-api-bnx4.onrender.com/results", {
 
         student_id: studentId,
         quiz_id: quizId,
@@ -176,7 +176,7 @@ function Results() {
 
     try {
 
-      await axios.put(`http://localhost:5000/results/${id}`, {
+      await axios.put(`https://lms-backend-api-bnx4.onrender.com/results/${id}`, {
 
         student_id: studentId,
         quiz_id: quizId,
@@ -209,7 +209,7 @@ function Results() {
 
     try {
 
-      await axios.delete(`http://localhost:5000/results/${id}`);
+      await axios.delete(`https://lms-backend-api-bnx4.onrender.com/results/${id}`);
 
       alert("Result Deleted Successfully");
 
