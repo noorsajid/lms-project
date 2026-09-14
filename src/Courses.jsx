@@ -22,7 +22,7 @@ function Courses() {
   const loadCourses = async () => {
     try {
 
-      const response = await axios.get("http://localhost:5000/courses");
+      const response = await axios.get("https://lms-backend-api-bnx4.onrender.com/courses");
 
       setCourses(response.data);
 
@@ -48,7 +48,7 @@ function Courses() {
 
     try {
 
-      await axios.post("http://localhost:5000/courses", {
+      await axios.post("https://lms-backend-api-bnx4.onrender.com/courses", {
 
         course_name: courseName,
         description: description,
@@ -94,7 +94,7 @@ const updateCourse = async (id) => {
 
   try {
 
-    await axios.put(`http://localhost:5000/courses/${id}`, {
+    await axios.put(`https://lms-backend-api-bnx4.onrender.com/courses/${id}`, {
 
       course_name: courseName,
       description: description,
@@ -128,7 +128,7 @@ const updateCourse = async (id) => {
 
     try {
 
-      await axios.delete(`http://localhost:5000/courses/${id}`);
+      await axios.delete(`https://lms-backend-api-bnx4.onrender.com/courses/${id}`);
 
       alert("Course Deleted");
 
