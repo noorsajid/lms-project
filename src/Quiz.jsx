@@ -26,7 +26,7 @@ const loadCourses = async () => {
 
 try{
 
-const res = await axios.get("http://localhost:5000/courses");
+const res = await axios.get("https://lms-backend-api-bnx4.onrender.com/courses");
 
 setCourses(res.data);
 
@@ -42,7 +42,7 @@ const loadQuizzes = async () => {
 
 try{
 
-const res = await axios.get("http://localhost:5000/quizzes");
+const res = await axios.get("https://lms-backend-api-bnx4.onrender.com/quizzes");
 
 setQuizzes(res.data);
 
@@ -56,7 +56,7 @@ console.log(error);
 
 const addQuiz=async()=>{
 
-await axios.post("http://localhost:5000/quizzes",{
+await axios.post("https://lms-backend-api-bnx4.onrender.com/quizzes",{
 
 course_id:courseId,
 title:title,
@@ -88,7 +88,7 @@ setPassingMarks(quiz.passing_marks);
 
 const updateQuiz=async(id)=>{
 
-await axios.put(`http://localhost:5000/quizzes/${id}`,{
+await axios.put(`https://lms-backend-api-bnx4.onrender.com/quizzes/${id}`,{
 
 course_id:courseId,
 title:title,
@@ -108,7 +108,7 @@ loadQuizzes();
 
 const deleteQuiz=async(id)=>{
 
-await axios.delete(`http://localhost:5000/quizzes/${id}`);
+await axios.delete(`https://lms-backend-api-bnx4.onrender.com/quizzes/${id}`);
 
 alert("Quiz Deleted");
 
