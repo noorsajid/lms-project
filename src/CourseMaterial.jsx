@@ -15,7 +15,7 @@ function CourseMaterial() {
     try {
 
       const res = await axios.get(
-        `http://localhost:5000/quiz-by-course/${course.course_id}`
+        `https://lms-backend-api-bnx4.onrender.com/quiz-by-course/${course.course_id}`
       );
 
       console.log("Quiz Response:", res.data);
@@ -40,7 +40,7 @@ function CourseMaterial() {
       try {
 
         const res = await axios.get(
-          `http://localhost:5000/courses/${id}`
+          `https://lms-backend-api-bnx4.onrender.com/courses/${id}`
         );
 
         console.log("Course Response:", res.data);
@@ -49,7 +49,7 @@ function CourseMaterial() {
 
         // Update AI activity
         await axios.post(
-          "http://localhost:5000/update-resource",
+          "https://lms-backend-api-bnx4.onrender.com/update-resource",
           {
             student_id: localStorage.getItem("student_id"),
             course_id: res.data.course_id
