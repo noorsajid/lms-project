@@ -88,7 +88,9 @@ function StudentResults() {
                   </span>
 
                 </td>
+
                 <td>{result.recommendation}</td>
+
               </tr>
 
             ))
