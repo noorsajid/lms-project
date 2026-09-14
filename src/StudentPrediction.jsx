@@ -30,7 +30,7 @@ function StudentPrediction() {
     try {
 
       const res = await axios.get(
-        `http://localhost:5000/predict-performance/${studentId}`
+        `https://lms-backend-api-bnx4.onrender.com/predict-performance/${studentId}`
       );
 
       setPrediction(res.data);
