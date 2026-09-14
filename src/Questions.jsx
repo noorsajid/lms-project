@@ -31,7 +31,7 @@ function Questions() {
 
     try {
 
-      const res = await axios.get("http://localhost:5000/quizzes");
+      const res = await axios.get("https://lms-backend-api-bnx4.onrender.com/quizzes");
 
       setQuizzes(res.data);
 
@@ -48,7 +48,7 @@ function Questions() {
 
     try {
 
-      const res = await axios.get("http://localhost:5000/questions");
+      const res = await axios.get("https://lms-backend-api-bnx4.onrender.com/questions");
 
       setQuestions(res.data);
 
@@ -107,7 +107,7 @@ function Questions() {
 
     try {
 
-      await axios.post("http://localhost:5000/questions", {
+      await axios.post("https://lms-backend-api-bnx4.onrender.com/questions", {
 
         quiz_id: quizId,
         question_text: questionText,
@@ -164,7 +164,7 @@ function Questions() {
 
     try {
 
-      await axios.put(`http://localhost:5000/questions/${id}`, {
+      await axios.put(`https://lms-backend-api-bnx4.onrender.com/questions/${id}`, {
 
         quiz_id: quizId,
         question_text: questionText,
@@ -194,7 +194,7 @@ function Questions() {
 
     try {
 
-      await axios.delete(`http://localhost:5000/questions/${id}`);
+      await axios.delete(`https://lms-backend-api-bnx4.onrender.com/questions/${id}`);
 
       alert("Question Deleted");
 
